@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <button>Outside Form</button>
+    <p></p>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="dropdown" placeholder="username" name="username" required>
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="password" id="password" name="password" required>
+        </p>
+        <button>IN THE MIDDLE!</button>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="month">Enter the Date</label>
+            <input type="month" id="month" name="date">
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" max="1000">
+        </p>
+
+        <button>Submit</button>
+        <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+        <input type="submit" value="Click me!">
+        <!-- Both button and input accomplish the same task, button is just much easier because whatever is between the button tags is what shows on the button whereas with input you have to assign a value -->
+
+
+
+    </form>
+    <hr>
+    <!-- Outside of a form, no default behavior for button -->
+    <button>Not inside form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h3>Search Google</h3>
+    <form action="http://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h3>Search Youtube</h3>
+    <form action="http://www.youtube.com/results?search_query">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+
+
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <!-- if you put just checked after id it will be auto checked -->
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="">--Please Select an Entree--</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+            <!-- step is to jump, so if 7 it increases by 7 each time. Value is where it starts by default -->
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <textarea name="" id="requests" cols="30" rows="10" name="Requests?"
+                placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20">
+            <!-- min is for numbers, minlength is for letters -->
+        </p>
+
+        <p>
+            <h2>Email</h2>
+            <input type="email" required>
+            <h2>URL</h2>
+            <input type="url" required>
+        </p> 
+        <button>Submit</button>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
