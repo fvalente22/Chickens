@@ -1,9 +1,10 @@
-h2 {
-    color: teal;
-    background-color: plum;
+/* h2 {
+    color: #5fcffc;
+    background-color: rgb(89, 151, 0);
 }
+/* the color above is using Hex(adecimal) color system, other is rgb. theres another one called HSL that we did not cover */
 
-button {
+/* button {
     color: magenta;
     background-color: cyan;
 }
@@ -11,6 +12,51 @@ button {
 
 p {
 color: olive;
-background: orange
+background-color: red;
+} 
+
+selectors are used in css to change all of a certain thing. 
+
+* to change everything
+button to change a specific thing for every button
+h1, h2 to change something specific to each h1 and h2. 
+example:
+ 
+button {
+    font-size: 30px;
 }
 
+*/ 
+
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: blue underline wavy;
+    letter-spacing: 10px;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif
+    /* the comma allows for you to put backups as not all machines support certain fonts, hence the Helvetica and sans serif */
+}
+
+a {
+    text-decoration: none;
+    /* did this to remove the underline thats auto applied to a link when using a href */
+}
+
+p {
+    line-height: 2;
+}
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
