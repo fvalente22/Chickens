@@ -34,8 +34,110 @@ span {
 
 .post a {
     color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
     color: #e63946;
+    font-weight: bold;
+}
+
+
+input + button {
+    background-color: pink;
+}
+
+h2 + button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+footer > a {
+    color: #a8dadc;
+}
+
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* section[class="post"] {
+    background-color: purple;
+} 
+This would change the background of each section, turning off for now */
+
+
+a[href*="google"]{
+    color: magenta;
+}
+
+header a {
+    font-size: 30px;
+    color: #008080;
+}
+
+#dislikes a {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+/* .post because any buttons within a post are the only ones effected */
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3n) {
+    background-color: #dfe8dc;
+}
+/* the n allows it to be every third, otherwise it would just be the third */
+
+/* below is from an exercise, adding here as an example */
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  /* DO NOT TOUCH THIS FILE!!!  */
+  /* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+  #board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+
+  .square:nth-of-type(1n) {
+    background-color: red;
+}
+.square:nth-of-type(2n) {
+    background-color: black;
+}
+/* example ended */
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+}
+/* since I put p it will only work on the paragraph, if I remove the p it will work for the whole page */
+
+h1,h2 {
+    color: yellow
 }
