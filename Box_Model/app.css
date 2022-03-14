@@ -4,9 +4,16 @@ div {
     background-color: #e5989b;
 }
 
+span {
+    margin-left: 30px;
+    margin-top: 30px;
+}
 h1 {
     background-color: pink;
-    width: 100px;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0;
 }
 
 #one {
@@ -16,6 +23,8 @@ h1 {
     border-style: solid;
     box-sizing: border-box;
     /* without this the box with the border would not be inline with the below box */ 
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 #two {
@@ -24,7 +33,8 @@ h1 {
     border-width: 3px;
     border-style: dashed;
     border-left-width: 8px;
-    border-radius: 10px;
+    padding-right: 50px;
+    margin: 200px;
 }
 
 #three {
@@ -32,4 +42,9 @@ h1 {
     border: 4px solid black;
     border-left-style: dotted;
     border-radius: 50%;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px 30px 40px;
 }
