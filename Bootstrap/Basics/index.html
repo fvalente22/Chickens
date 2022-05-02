@@ -12,10 +12,11 @@
 </head>
 <!-- with bootstrap you can either use a link, as above, or you can download what you need and pull from that. 
 Downloading is best, but for simple situations a link will suffice -->
+
 <body>
     <div class="container">
         <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
-        <h2 class="display-4">Buttons</h2>
+        <h2 class="display-4">Buttons <span class="badge bg-success rounded-pill">New</span></h2>
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-info">Info</button>
@@ -25,6 +26,25 @@ Downloading is best, but for simple situations a link will suffice -->
         <button class="btn-outline-info btn-lg">Info Outline</button>
         <button class="btn-outline-secondary btn-sm">SM Button</button>
         <button type="button" class="btn btn-success" disabled>Success Disabled</button>
+        <button type="button" class="btn btn-primary">Updates <span class="badge bg-danger">9</span></button>
+
+        <h3>Button Groups</h3>
+        <div class="btn-group">
+            <button class="btn btn-warning">One</button>
+            <button class="btn btn-warning">Two</button>
+            <button class="btn btn-warning">Three</button>
+        </div>
+
+        <h3>Alerts</h3>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Oh No!</h4>
+            Danger! You are about to end the world as we know it
+            <!-- <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button> -->
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
         <h2 class="display-4">Typography</h2>
 
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo odit dignissimos doloribus
